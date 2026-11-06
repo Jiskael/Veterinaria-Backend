@@ -1,9 +1,12 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -25,4 +28,9 @@ public class Duenio {
     private String email;
 
     private int telefono;
+
+    // Duenio.java  (lado "uno"; Mascota y Servicio son idénticas)
+    @JsonIgnore
+    @OneToMany(mappedBy = "duenio", cascade = CascadeType.ALL)
+    private List<Consulta> consultas;
 }

@@ -16,4 +16,17 @@ public class Consulta {
     private Integer id;
 
     private String motivo;
+
+    // Consulta.java  (lado "muchos": tiene las FK)
+    @ManyToOne
+    @JoinColumn(name = "id_duenio")
+    private Duenio duenio;
+
+    @ManyToOne
+    @JoinColumn(name = "id_mascota")
+    private Mascota mascota;
+
+    @ManyToOne
+    @JoinColumn(name = "id_servicio")
+    private Servicio servicio;
 }
