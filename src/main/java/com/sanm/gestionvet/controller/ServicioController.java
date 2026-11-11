@@ -1,9 +1,9 @@
-package controller;
+package com.sanm.gestionvet.controller;
 
-import model.Servicio;
+import com.sanm.gestionvet.model.Servicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.ServicioService;
+import com.sanm.gestionvet.service.ServicioService;
 
 import java.util.List;
 import java.util.Optional;

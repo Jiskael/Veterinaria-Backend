@@ -1,9 +1,9 @@
-package controller;
+package com.sanm.gestionvet.controller;
 
-import model.Duenio;
+import com.sanm.gestionvet.model.Duenio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.DuenioService;
+import com.sanm.gestionvet.service.DuenioService;
 
 import java.util.List;
 import java.util.Optional;

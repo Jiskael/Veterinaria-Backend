@@ -1,15 +1,15 @@
-package controller;
+package com.sanm.gestionvet.controller;
 
-import model.Consulta;
+import com.sanm.gestionvet.model.Consulta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.ConsultaService;
+import com.sanm.gestionvet.service.ConsultaService;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/duenios")
+@RequestMapping("/api/v1/consultas")
 public class ConsultaController {
 
     @Autowired

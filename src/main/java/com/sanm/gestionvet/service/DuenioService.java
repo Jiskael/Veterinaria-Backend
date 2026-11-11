@@ -1,9 +1,9 @@
-package service;
+package com.sanm.gestionvet.service;
 
-import model.Duenio;
+import com.sanm.gestionvet.model.Duenio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.DuenioRepository;
+import com.sanm.gestionvet.repository.DuenioRepository;
 
 import java.util.List;
 import java.util.Optional;
