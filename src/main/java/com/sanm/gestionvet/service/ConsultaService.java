@@ -1,9 +1,9 @@
-package service;
+package com.sanm.gestionvet.service;
 
-import model.Consulta;
+import com.sanm.gestionvet.model.Consulta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.ConsultaRepository;
+import com.sanm.gestionvet.repository.ConsultaRepository;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,9 +1,9 @@
-package service;
+package com.sanm.gestionvet.service;
 
-import model.Servicio;
+import com.sanm.gestionvet.model.Servicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.ServicioRepository;
+import com.sanm.gestionvet.repository.ServicioRepository;
 
 import java.util.List;
 import java.util.Optional;

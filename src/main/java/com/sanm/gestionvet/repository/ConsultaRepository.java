@@ -1,6 +1,6 @@
-package repository;
+package com.sanm.gestionvet.repository;
 
-import model.Consulta;
+import com.sanm.gestionvet.model.Consulta;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ConsultaRepository extends JpaRepository<Consulta, Integer> {

@@ -1,4 +1,4 @@
-package model;
+package com.sanm.gestionvet.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

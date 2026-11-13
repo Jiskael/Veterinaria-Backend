@@ -1,9 +1,9 @@
-package service;
+package com.sanm.gestionvet.service;
 
-import model.Mascota;
+import com.sanm.gestionvet.model.Mascota;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.MascotaRepository;
+import com.sanm.gestionvet.repository.MascotaRepository;
 
 import java.util.List;
 import java.util.Optional;

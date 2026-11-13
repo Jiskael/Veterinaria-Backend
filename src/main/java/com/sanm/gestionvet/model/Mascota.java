@@ -1,4 +1,4 @@
-package model;
+package com.sanm.gestionvet.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -12,25 +12,19 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "duenio")
-public class Duenio {
+@Table(name = "mascota")
+public class Mascota {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String rut;
-
     private String nombre;
 
-    private String apellido;
+    private String especie;
 
-    private String email;
-
-    private int telefono;
-
-    // Duenio.java  (lado "uno"; Mascota y Servicio son idénticas)
     @JsonIgnore
-    @OneToMany(mappedBy = "duenio", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "mascota", cascade = CascadeType.ALL)
     private List<Consulta> consultas;
+
 }
